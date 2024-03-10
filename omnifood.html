@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omnifood</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="omnifood.css" />
+  </head>
+
+  <body>
+    <div class="bodycontainer">
+      <!-- /******************************************************************************************************************
+                                                SLIDER  New Section!!!  
+*******************************************************************************************************************/ -->
+      <div class="sidebar">
+        <div class="logo">
+          <img src="img/omnifood-logo.png" alt="" class="omnilogo" />
+        </div>
+        <div class="menus">
+          <a href="index.html"
+            ><ion-icon name="home-outline"></ion-icon> Home</a
+          >
+          <a href="#"><ion-icon name="newspaper-outline"></ion-icon>Meals</a>
+          <a href="#" id="open-cart"
+            ><ion-icon name="cart-outline"></ion-icon> Cart</a
+          >
+          <a href="#"><ion-icon name="grid-outline"></ion-icon> Feedback</a>
+          <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        </div>
+
+        <div class="profile">
+          <img src="loginicon.svg" alt="" class="profile-img" />
+          <div class="profile-name">
+            <a href="login/loginpg.html" class="loginlink"
+              ><h4 class="loginlink">Login/Sign up</h4></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- /******************************************************************************************************************
+                                                SLIDER END 
+*******************************************************************************************************************/ -->
+
+      <div class="main">
+        <div class="main-header">
+          <div class="sliderbtn">
+            <ion-icon class="menu-bar" name="menu-outline"></ion-icon>
+          </div>
+          <div class="search">
+            <input type="text" placeholder="Search Your Meals Here..." />
+            <button class="btn-search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-wrapper">
+          <p class="Recommedation">Recommedation</p>
+          <div class="filter">
+            <button class="btn-filter">Dal</button>
+            <button class="btn-filter">Pizza</button>
+            <button class="btn-filter">Burger</button>
+            <button class="btn-filter">Paneer</button>
+          </div>
+        </div>
+
+        <div class="sort">
+          <p class="sortfirstchild">Sort</p>
+          <div class="sort-list">
+            <select>
+              <option value="0">All</option>
+              <option value="1">Price: Highest to Lowest</option>
+              <option value="2">Price: Lowest to Highest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="wrapper" id="cardwrapper">
+          <!-- ****************************** 
+                    FIRST CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left">
+              <img src="foodimg/pizza-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Margherita pizza</h3>
+              <p class="oldprice">$200</p>
+              <span class="newprice">$180</span>
+              <p class="card-detail">
+                Chinese, Continental, Italian, Burger, Fast Food, Desserts,
+                Beverages Ranjit Avenue, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    SECOND CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/burger-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Veg. Burger</h3>
+              <p class="oldprice">$150</p>
+              <span class="newprice">$130</span>
+              <p class="card-detail">
+                North Indian, Chinese, Fast Food, Desserts Mohan Nagar, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+          <!-- ****************************** 
+                    THIRD CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left red-bg">
+              <img src="foodimg/sandwich-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Grilled sandwich</h3>
+              <p class="oldprice">$250</p>
+              <span class="newprice">$190</span>
+              <p class="card-detail">
+                North Indian, Chinese, Continental, Fast Food, Mughlai, Biryani,
+                Bakery White Avenue, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    FOURTH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/daalmakhni-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Dal Makhni</h3>
+              <p class="oldprice">$300</p>
+              <span class="newprice">$280</span>
+              <p class="card-detail">
+                BBQ, Biryani, Kebab, Continental, Chinese, Beverages, Desserts
+                Maquboolpura, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    FIFTH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/whitesauce-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">White sauce paasta</h3>
+              <p class="oldprice">$150</p>
+              <span class="newprice">$140</span>
+              <p class="card-detail">
+                Chinese, Italian, Continental, Asian, Desserts, Beverages Ranjit
+                Avenue, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    SIXTH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/shahipaneer-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Shahi paneer</h3>
+              <p class="oldprice">$350</p>
+              <span class="newprice">$330</span>
+              <p class="card-detail">
+                Mediterranean, Fast Food, Desserts Maquboolpura, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    SEVENTH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/onionpizza-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Onion pizza's</h3>
+              <p class="oldprice">$250</p>
+              <span class="newprice">$230</span>
+              <p class="card-detail">Onion pizza, Maquboolpura, Amritsar</p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    EIGHTH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/redsaucepaasta-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Red sauce paasta</h3>
+              <p class="oldprice">$270</p>
+              <span class="newprice">$250</span>
+              <p class="card-detail">
+                Pasta, Italian, Fast Food, Lawrence Road, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    NINETH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/paneerpizza-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Paneer pizza's</h3>
+              <p class="oldprice">$450</p>
+              <span class="newprice">$430</span>
+              <p class="card-detail">
+                Pizza, Salad, Shake, Beverages Mohan Nagar, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    TENTH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/icecream-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Ice cream</h3>
+              <p class="oldprice">$260</p>
+              <span class="newprice">$130</span>
+              <p class="card-detail">
+                Ice Cream, Desserts, Beverages Ranjit Avenue, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    ELEVENTH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/momos-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Veg. momos</h3>
+              <p class="oldprice">$370</p>
+              <span class="newprice">$190</span>
+              <p class="card-detail">Momos Town Hall, Amritsar</p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+
+          <!-- ****************************** 
+                    TEWELVETH CARD
+        ******************************  -->
+          <div class="card">
+            <div class="card-left yellow-bg">
+              <img src="foodimg/springroll-removebg-preview.png" />
+            </div>
+            <div class="card-center">
+              <h3 class="fooditem">Spring roll</h3>
+              <p class="oldprice">$350</p>
+              <span class="newprice">$210</span>
+              <p class="card-detail">
+                Mediterranean, Fast Food, Desserts Maquboolpura, Amritsar
+              </p>
+            </div>
+            <div>
+              <a href="#" class="add-cart">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container grid grid--footer">
+            <div class="logo-col footerflex">
+              <a href="#" class="footer-logo">
+                <img
+                  class="logo"
+                  alt="Omnifood logo"
+                  src="img/omnifood-logo.png"
+                />
+              </a>
+
+              <ul class="social-links">
+                <li>
+                  <a class="footer-link" href="#"
+                    ><ion-icon
+                      class="social-icon"
+                      name="logo-instagram"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#"
+                    ><ion-icon
+                      class="social-icon"
+                      name="logo-facebook"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#"
+                    ><ion-icon
+                      class="social-icon"
+                      name="logo-twitter"
+                    ></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="address-col footerflex">
+              <p class="footer-heading">Contact us</p>
+              <div class="contacts">
+                <p class="address">
+                  623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                </p>
+              </div>
+              <div class="contacts">
+                <p>
+                  <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+                  ><br />
+                  <a class="footer-link" href="mailto:hello@omnifood.com"
+                    >hello@omnifood.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <nav class="nav-col footerflex">
+              <p class="footer-heading">Account</p>
+              <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Create account</a></li>
+                <li><a class="footer-link" href="#">Sign in</a></li>
+                <li><a class="footer-link" href="#">iOS app</a></li>
+                <li><a class="footer-link" href="#">Android app</a></li>
+              </ul>
+            </nav>
+
+            <nav class="nav-col footerflex">
+              <p class="footer-heading">Company</p>
+              <ul class="footer-nav">
+                <li><a class="footer-link" href="#">About Omnifood</a></li>
+                <li><a class="footer-link" href="#">For Business</a></li>
+                <li><a class="footer-link" href="#">Cooking partners</a></li>
+                <li><a class="footer-link" href="#">Careers</a></li>
+              </ul>
+            </nav>
+
+            <nav class="nav-col footerflex">
+              <p class="footer-heading">Resources</p>
+              <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Recipe directory </a></li>
+                <li><a class="footer-link" href="#">Help center</a></li>
+                <li><a class="footer-link" href="#">Privacy & terms</a></li>
+              </ul>
+            </nav>
+          </div>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc.
+            All rights reserved.
+          </p>
+        </footer>
+      </div>
+
+      <div class="slider" id="slider">
+        <div class="menus">
+          <a href="index.html"
+            ><ion-icon name="home-outline"></ion-icon> Home</a
+          >
+          <a href="#cardwrapper"
+            ><ion-icon name="newspaper-outline"></ion-icon>Meals</a
+          >
+          
+          <a href="#"><ion-icon name="grid-outline"></ion-icon> Feedback</a>
+          <a href="#"><ion-icon name="settings-outline"></ion-icon> Settings</a>
+        </div>
+        <div class="profile sliderprofile">
+          <img src="loginicon.svg" alt="" class="profile-img" />
+          <div class="profile-name">
+            <a href="login/loginpg.html" class="loginlink"
+              ><h4 class="loginlink">Login/Sign up</h4></a
+            >
+          </div>
+        </div>
+
+        <span class="close-btn" id="close-slider">&times;</span>
+      </div>
+
+      <div id="cart-bar" class="cart-bar">
+        <div class="cart-header">
+          <span id="close-cart" class="close-btn">&times;</span>
+          <h2 class="headingcontent">Cart</h2>
+        </div>
+        <div class="cart-content"></div>
+      </div>
+    </div>
+
+    <script src="omnifood.js"></script>
+  </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+</html>

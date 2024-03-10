@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Lato", sans-serif;
+}
+.bodycontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/******************************************************************************************************************
+                                                         SIDE BAR New Section!!!  
+*******************************************************************************************************************/
+.sidebar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #fdf2e9;
+  color: #fff;
+  position: fixed;
+  left: 0;
+}
+.omnilogo {
+  width: 12rem;
+}
+.menus {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.menus a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.menus ion-icon {
+  margin-right: 0.5rem;
+}
+.menus a:hover {
+  color: #cf711f;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #e67e22;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.loginlink:link,
+.loginlink:visited {
+  color: white;
+  text-decoration: none;
+}
+.profile:hover {
+  background-color: #cf711f;
+}
+.profile-img {
+  width: 35px;
+  height: 35px;
+  filter: invert(1);
+  border-radius: 50%;
+}
+.profile-name p {
+  font-size: 12px;
+}
+
+/******************************************************************************************************************
+                                                              SIDE BAR END
+*******************************************************************************************************************/
+.main {
+  min-height: 100%;
+  min-width: 300px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2%;
+  margin-left: 20%;
+}
+
+/******************************************************************************************************************
+                                                               MAIN HEADER New Section!!!  
+*******************************************************************************************************************/
+.main-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.menu-bar {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 20px;
+  display: none;
+} /* Fix Me!! */
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 0.7rem 1rem;
+  position: relative;
+  background-color: #fdf2e9;
+}
+.search input {
+  width: 90%;
+  border: none;
+  background-color: #fdf2e9;
+}
+.btn-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 5%;
+  border: none;
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #fdf2e9;
+  cursor: pointer;
+}
+.btn-search:hover {
+  background-color: #cf711f;
+}
+
+/******************************************************************************************************************
+                                                            MAIN HEADER END
+*******************************************************************************************************************/
+
+/******************************************************************************************************************
+                                                        FILTER WRAPPER AND SORT New Section!!!  
+*******************************************************************************************************************/
+.filter-wrapper {
+  margin: 1rem 0;
+  font-size: 14px;
+}
+.Recommedation {
+  font-weight: 700;
+  color: #cf711f;
+}
+.filter {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+.btn-filter {
+  min-width: 80px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background-color: #e67e22;
+  cursor: pointer;
+}
+.btn-filter:hover {
+  background-color: #cf711f;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24);
+}
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sort p {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.sort-list select {
+  height: 1.5rem;
+  border-radius: 20px;
+  border: none;
+  margin-top: 0 0.5rem;
+  padding: 0 0.5rem;
+  border: 2px solid #cf711f;
+}
+
+/******************************************************************************************************************
+                                                      FILTER WRAPPER AND SORT END
+*******************************************************************************************************************/
+
+/******************************************************************************************************************
+                                                              WRAPPER New Section!!!  
+*******************************************************************************************************************/
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 2rem;
+  overflow-y: auto;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0;
+  line-height: 1.8;
+  gap: 1.5rem;
+  /* box-shadow: #ffca9c 2px 2px 4px; */
+  background-color: #fdf2e9;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: space-evenly;
+}
+.card:hover {
+  border: 2px solid #e67e22;
+}
+.card-left {
+  width: 17%;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20%;
+}
+.card-left img {
+  width: 100%;
+  height: auto;
+  min-height: 60px;
+}
+.card-center {
+  width: 50%;
+}
+.fooditem {
+  color: #e67e22;
+}
+.oldprice {
+  display: inline;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: gray;
+  font-size: 1.1rem;
+}
+.newprice {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+}
+.card-detail {
+  font-size: 0.9rem;
+  color: rgb(94, 94, 94);
+}
+.add-cart:link,
+.add-cart:visited {
+  text-decoration: none;
+  color: white;
+  background-color: #e67e22;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 9px;
+}
+.add-cart:hover,
+.add-cart:active {
+  background-color: #cf711f;
+}
+
+/******************************************************************************************************************
+                                                          WRAPPER END
+*******************************************************************************************************************/
+
+/******************************************************************************************************************
+                                                            FOOTER New Section!!!  
+*******************************************************************************************************************/
+.footer {
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid #eee;
+  width: 75vw;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 4.6rem;
+}
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid--footer {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.footerflex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.social-icon {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.footer-heading {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.contacts {
+  font-style: normal;
+  line-height: 1.6;
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #767676;
+  transition: all 0.3s;
+}
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+.logo {
+  width: 10rem;
+}
+.copyright {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  line-height: 1.6;
+  color: #767676;
+  padding-top: 0.5rem;
+  border-top: 1px solid #eee;
+}
+/******************************************************************************************************************
+                                                          FOOTER END
+*******************************************************************************************************************/
+
+/******************************************************************************************************************
+                                                            SLIDER  New Section!!!  
+*******************************************************************************************************************/
+
+#slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.95;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #fff;
+  z-index: 2;
+  animation: anm 0.5s ease;
+}
+.sliderprofile {
+  margin-top: 2rem;
+}
+@keyframes anm {
+  0% {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+#slider .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+/******************************************************************************************************************
+                                                        SLIDER END 
+*******************************************************************************************************************/
+
+/******************************************************************************************************************
+                                                          CART BAR New Section!!!  
+*******************************************************************************************************************/
+
+#cart-bar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+#cart-content {
+  padding: 16px;
+}
+#close-cart {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.cart-header {
+  display: flex;
+  background-color: #e67e22;
+  align-items: center;
+}
+.headingcontent {
+  display: block;
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+.close-btn {
+  filter: invert(1);
+  margin-right: 0.5rem;
+}
+
+/******************************************************************************************************************
+                                                      CART BAR END 
+*******************************************************************************************************************/
+
+@media (max-width: 1200px) {
+  #slider {
+    display: none;
+  }
+
+  .menu-bar {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-left {
+    width: 50%;
+  }
+  .card-center {
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .fooditem {
+    font-size: 1.5rem;
+    letter-spacing: 1.1px;
+  }
+  .card-detail {
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+  }
+  .add-cart:link,
+  .add-cart:visited {
+    font-size: 1.2rem;
+  }
+  .footerflex {
+    justify-content: center;
+    align-items: center;
+  }
+  .footerflex p {
+    text-align: center;
+  }
+  .footer-nav {
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright {
+    margin-left: 0;
+  }
+  .wrapper {
+    gap: 3rem;
+  }
+}
